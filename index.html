@@ -12,63 +12,110 @@
         }
         .header {
             background-color: gold;
+            color: red;
             padding: 20px;
             text-align: center;
             font-size: 30px;
         }
+        .countdown-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .countdown-timer {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
         .container {
             margin: 20px auto;
+            max-width: 1000px;
             padding: 20px;
-            max-width: 800px;
             text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            padding-top: 25px;
-            height: 0;
+        .video-container,
+        .list-container {
+            flex: 1 1 50%;
+            margin-bottom: 20px;
         }
         .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            height: 300px; 
         }
-        .list {
-            text-align: left;
-            margin-top: 20px;
+        .list-container {
+            text-align: center;
         }
-        .list th, .list td {
-            padding: 10px;
+        .list-container h2 {
+            margin-bottom: 10px;
         }
-        .buttons {
-            margin-top: 20px;
+        .list-container ul {
+            list-style: none;
+            padding: 0;
         }
-        .buttons a {
-            display: inline-block;
+        .list-container li {
+            margin-bottom: 10px;
+        }
+        .buttons-container {
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+        }
+        .buttons-container button {
             background-color: gold;
             color: red;
             padding: 10px 20px;
-            margin-right: 10px;
-            text-decoration: none;
+            margin: 0 10px;
+            border: none;
+            cursor: pointer;
             font-weight: bold;
+            border-radius: 5px;
+        }
+        .map-container {
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Adjust map styling as needed */
+        .map {
+            width: 100%;
+            height: 400px;
         }
     </style>
 </head>
 <body>
     <div class="header">Brianna's Quince Page</div>
+    <div class="countdown-container">
+        <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+        <a href="https://logwork.com/countdown-e8q1" class="countdown-timer" data-width="414" data-timezone="America/Chicago" data-textcolor="#120404" data-date="2024-11-30 17:00" data-digitscolor="#e8dd15">11/30/24</a>
+    </div>
     <div class="container">
         <div class="video-container">
-            <!-- Insert your video embed code here -->
-            <!-- Example: -->
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Replace "VIDEO_ID" with the ID of your YouTube video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x5etvRumWM8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="buttons">
-            <a href="#">Button 1</a>
-            <a href="#">Button 2</a>
+        <div class="list-container">
+            <h2>Padrinos</h2>
+            <ul>
+                <li>Padrino 1</li>
+                <li>Padrino 2</li>
+                <li>Padrino 1</li>
+                <li>Padrino 2</li>                
+                <li>Padrino 1</li>
+                <li>Padrino 2</li>
+                <li>Padrino 2</li>
+                <!-- Add more Padrinos as needed -->
+            </ul>
         </div>
+        <div class="buttons-container">
+            <button>Be a Sponsor</button>
+            <button>Be a Padrino</button>
+        </div>
+    </div>
+    <div class="map-container">
+        <!-- Replace "MAP_URL" with the embed URL of your Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.0889970402513!2d-95.60475452618206!3d29.94811862313135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d3e3e20f9d43%3A0xbefb04aecabba9bc!2sGolden%20Petals%20Reception%20Hall!5e0!3m2!1sen!2sus!4v1713397914694!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </body>
 </html>
