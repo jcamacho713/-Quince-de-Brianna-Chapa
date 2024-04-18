@@ -9,6 +9,7 @@
             background-color: red;
             color: white;
             font-family: "Old English Text MT", sans-serif;
+            padding: 10px;
         }
         .header {
             background-color: gold;
@@ -16,6 +17,7 @@
             padding: 20px;
             text-align: center;
             font-size: 30px;
+            margin-bottom: 20px;
         }
         .countdown-container {
             text-align: center;
@@ -26,23 +28,15 @@
             padding: 5px 10px;
         }
         .container {
-            margin: 20px auto;
-            max-width: 1000px;
-            padding: 20px;
             text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
         }
         .video-container,
         .list-container {
-            flex: 1 1 50%;
             margin-bottom: 20px;
         }
         .video-container iframe {
             width: 100%;
-            height: 300px; 
+            height: 200px; 
         }
         .list-container {
             text-align: center;
@@ -58,7 +52,6 @@
             margin-bottom: 10px;
         }
         .buttons-container {
-            flex: 1 1 100%;
             margin-bottom: 20px;
         }
         .buttons-container button {
@@ -83,6 +76,13 @@
             width: 100%;
             height: 400px;
         }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            .video-container iframe {
+                height: 150px; /* Reduce video height for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -99,20 +99,13 @@
         <div class="list-container">
             <h2>Padrinos</h2>
             <ul>
-                <li>Tiffany Camacho - Crown/Tiara</li>
-                <li>Badita Salazar  - Necklace</li>
-                <li>Lisa Davila     - Earrings</li>
-                <li>Yvette          - Braclet </li>                
-                <li>Marquez Richards- Photography/ Video </li>
-                <li>Gisela Pena     - Ring</li>
-                <li>Laurie Sanchez  - Bible/Rosary</li>
-                <li>Maria Estrada   - Cake </li>
-                <li>Mayda & Woody   - Dress</li>
-                <li>Open            - Suprise Gift </li>
-                <li>Open            - Medallion</li>
-                <li>Gracie Camacho  - Fruit Table </li>
-                <li>Open            - Doll</li>           
-                
+                <li>Padrino 1</li>
+                <li>Padrino 2</li>
+                <li>Padrino 1</li>
+                <li>Padrino 2</li>                
+                <li>Padrino 1</li>
+                <li>Padrino 2</li>
+                <li>Padrino 2</li>
                 <!-- Add more Padrinos as needed -->
             </ul>
         </div>
@@ -126,5 +119,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.0889970402513!2d-95.60475452618206!3d29.94811862313135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d3e3e20f9d43%3A0xbefb04aecabba9bc!2sGolden%20Petals%20Reception%20Hall!5e0!3m2!1sen!2sus!4v1713397914694!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </body>
+</html>
+
 </html>
 
