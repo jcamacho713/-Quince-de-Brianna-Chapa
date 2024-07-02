@@ -43,10 +43,18 @@
         }
         .video-container {
             margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio (Responsive Video) */
         }
         .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 300px; 
+            height: 100%;
+            border: none;
         }
         .list-container {
             text-align: center;
@@ -151,7 +159,7 @@
                     <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/zapubw?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
                 </div>
             </div>
-            <div class="court-list-container">
+            <div class="list-container">
                 <h2>Padrinos</h2>
                 <ul>
                     <li>Cake - Maria Estrada</li>
@@ -177,4 +185,3 @@
     </div>
 </body>
 </html>
-
