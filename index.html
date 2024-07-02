@@ -70,6 +70,8 @@
         .buttons-container {
             flex: 1 1 100%;
             margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
         }
         .buttons-container button {
             background-color: gold;
@@ -80,6 +82,7 @@
             cursor: pointer;
             font-weight: bold;
             border-radius: 5px;
+            width: 150px; /* Ensure uniform width */
         }
         .map-container {
             margin: 20px auto;
@@ -139,10 +142,16 @@
             <a href="https://logwork.com/countdown-e8q1" class="countdown-timer" data-width="414" data-timezone="America/Chicago" data-textcolor="#120404" data-date="2024-11-30 17:00" data-digitscolor="#e8dd15">11/30/24</a>
         </div>
         <div class="container">
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/x5etvRumWM8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="buttons-container">
+                <button>Be a Sponsor</button>
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=95j_kWaq80yWF7XE9AnFHVhItyfnevBPpKcA6cbVm3BUNlpMQzdIODJDTlhENUlGNUE1VkM2RDhJNC4u" target="_blank"><button>RSVP</button></a>
             </div>
-            <div class="list-container">
+            <div class="video-container" style="order: 2; margin-top: 20px;">
+                <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
+                    <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/zapubw?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+                </div>
+            </div>
+            <div class="list-container" style="order: 3;">
                 <h2>Padrinos</h2>
                 <ul>
                     <li>Cake - Maria Estrada</li>
@@ -157,10 +166,6 @@
                     <li>Dress - Woody & Mayda</li>
                     <li>Earrings - Lisa Davila</li>
                 </ul>
-            </div>
-            <div class="buttons-container">
-                <button>Be a Sponsor</button>
-                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=95j_kWaq80yWF7XE9AnFHVhItyfnevBPpKcA6cbVm3BUNlpMQzdIODJDTlhENUlGNUE1VkM2RDhJNC4u" target="_blank"><button>RSVP</button></a>
             </div>
         </div>
         <div class="map-container">
