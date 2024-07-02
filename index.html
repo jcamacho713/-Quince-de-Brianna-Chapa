@@ -40,21 +40,19 @@
             max-width: 1000px;
             padding: 20px;
             text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
-        .video-container {
+        .video-container,
+        .list-container {
+            flex: 1 1 50%;
             margin-bottom: 20px;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio (Responsive Video) */
         }
         .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            border: none;
+            height: 300px; 
         }
         .list-container {
             text-align: center;
@@ -70,9 +68,8 @@
             margin-bottom: 10px;
         }
         .buttons-container {
+            flex: 1 1 100%;
             margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
         }
         .buttons-container button {
             background-color: gold;
@@ -83,11 +80,8 @@
             cursor: pointer;
             font-weight: bold;
             border-radius: 5px;
-            width: 150px; /* Ensure uniform width */
         }
-        .map-container,
-        .court-list-container,
-        .attire-container {
+        .map-container {
             margin: 20px auto;
             max-width: 1000px;
             padding: 20px;
@@ -96,6 +90,31 @@
         .map {
             width: 100%;
             height: 400px;
+        }
+        .court-list-container {
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 20px;
+            text-align: center;
+        }
+        .court-list-container h2 {
+            margin-bottom: 10px;
+        }
+        .court-list-container ul {
+            list-style: none;
+            padding: 0;
+        }
+        .court-list-container li {
+            margin-bottom: 10px;
+        }
+        .attire-container {
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 20px;
+            text-align: center;
+        }
+        .attire-container h2 {
+            margin-bottom: 10px;
         }
     </style>
     <script>
@@ -121,13 +140,7 @@
         </div>
         <div class="container">
             <div class="video-container">
-                <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
-                    <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/zapubw?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
-                </div>
-            </div>
-            <div class="buttons-container">
-                <button>Be a Sponsor</button>
-                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=95j_kWaq80yWF7XE9AnFHVhItyfnevBPpKcA6cbVm3BUNlpMQzdIODJDTlhENUlGNUE1VkM2RDhJNC4u" target="_blank"><button>RSVP</button></a>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x5etvRumWM8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="list-container">
                 <h2>Padrinos</h2>
@@ -145,6 +158,10 @@
                     <li>Earrings - Lisa Davila</li>
                 </ul>
             </div>
+            <div class="buttons-container">
+                <button>Be a Sponsor</button>
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=95j_kWaq80yWF7XE9AnFHVhItyfnevBPpKcA6cbVm3BUNlpMQzdIODJDTlhENUlGNUE1VkM2RDhJNC4u" target="_blank"><button>RSVP</button></a>
+            </div>
         </div>
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.0889970402513!2d-95.60475452618206!3d29.94811862313135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d3e3e20f9d43%3A0xbefb04aecabba9bc!2sGolden%20Petals%20Reception%20Hall!5e0!3m2!1sen!2sus!4v1713397914694!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -154,25 +171,24 @@
     <!-- Quince Court Section -->
     <div id="quince-court" style="display: none;">
         <div class="container">
-            <div class="video-container">
-                <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
-                    <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/zapubw?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
-                </div>
-            </div>
-            <div class="list-container">
-                <h2>Padrinos</h2>
+            <div class="court-list-container">
+                <h2>Damas</h2>
                 <ul>
-                    <li>Cake - Maria Estrada</li>
-                    <li>Necklace - Badita Salazar 2</li>
-                    <li>Ring - Gisela Pena</li>
-                    <li>Anklet - Yvette</li>
-                    <li>Crown/Tiara - Tiffany Camacho</li>
-                    <li>Medallion - Mary Chuy Camacho</li>
-                    <li>Bible/Rosary/Doll - Laurie</li>
-                    <li>Bracelet - Marisol</li>
-                    <li>Surprise Gift - Matt Young</li>
-                    <li>Dress - Woody & Mayda</li>
-                    <li>Earrings - Lisa Davila</li>
+                    <li>Rachelle Maldonado</li>
+                    <li>Dania Janice </li>
+                    <li>Rosemary Becerra</li>
+                    <li>Kathrine </li>
+                    <!-- Add more Damas as needed -->
+                </ul>
+            </div>
+            <div class="court-list-container">
+                <h2>Chambelanes</h2>
+                <ul>
+                    <li>Raymond Maldonado</li>
+                    <li>Julian Camacho</li>
+                    <li>Manuel Becerra</li>
+                    <li>Yulian </li>
+                    <!-- Add more Chambelanes as needed -->
                 </ul>
             </div>
             <div class="attire-container">
@@ -185,3 +201,4 @@
     </div>
 </body>
 </html>
+
