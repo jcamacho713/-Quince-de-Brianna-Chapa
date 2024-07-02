@@ -40,14 +40,8 @@
             max-width: 1000px;
             padding: 20px;
             text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
         }
-        .video-container,
-        .list-container {
-            flex: 1 1 50%;
+        .video-container {
             margin-bottom: 20px;
         }
         .video-container iframe {
@@ -68,7 +62,6 @@
             margin-bottom: 10px;
         }
         .buttons-container {
-            flex: 1 1 100%;
             margin-bottom: 20px;
             display: flex;
             justify-content: center;
@@ -84,7 +77,9 @@
             border-radius: 5px;
             width: 150px; /* Ensure uniform width */
         }
-        .map-container {
+        .map-container,
+        .court-list-container,
+        .attire-container {
             margin: 20px auto;
             max-width: 1000px;
             padding: 20px;
@@ -93,31 +88,6 @@
         .map {
             width: 100%;
             height: 400px;
-        }
-        .court-list-container {
-            margin: 20px auto;
-            max-width: 1000px;
-            padding: 20px;
-            text-align: center;
-        }
-        .court-list-container h2 {
-            margin-bottom: 10px;
-        }
-        .court-list-container ul {
-            list-style: none;
-            padding: 0;
-        }
-        .court-list-container li {
-            margin-bottom: 10px;
-        }
-        .attire-container {
-            margin: 20px auto;
-            max-width: 1000px;
-            padding: 20px;
-            text-align: center;
-        }
-        .attire-container h2 {
-            margin-bottom: 10px;
         }
     </style>
     <script>
@@ -142,16 +112,16 @@
             <a href="https://logwork.com/countdown-e8q1" class="countdown-timer" data-width="414" data-timezone="America/Chicago" data-textcolor="#120404" data-date="2024-11-30 17:00" data-digitscolor="#e8dd15">11/30/24</a>
         </div>
         <div class="container">
-            <div class="buttons-container">
-                <button>Be a Sponsor</button>
-                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=95j_kWaq80yWF7XE9AnFHVhItyfnevBPpKcA6cbVm3BUNlpMQzdIODJDTlhENUlGNUE1VkM2RDhJNC4u" target="_blank"><button>RSVP</button></a>
-            </div>
-            <div class="video-container" style="order: 2; margin-top: 20px;">
+            <div class="video-container">
                 <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
                     <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/zapubw?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
                 </div>
             </div>
-            <div class="list-container" style="order: 3;">
+            <div class="buttons-container">
+                <button>Be a Sponsor</button>
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=95j_kWaq80yWF7XE9AnFHVhItyfnevBPpKcA6cbVm3BUNlpMQzdIODJDTlhENUlGNUE1VkM2RDhJNC4u" target="_blank"><button>RSVP</button></a>
+            </div>
+            <div class="list-container">
                 <h2>Padrinos</h2>
                 <ul>
                     <li>Cake - Maria Estrada</li>
@@ -176,24 +146,25 @@
     <!-- Quince Court Section -->
     <div id="quince-court" style="display: none;">
         <div class="container">
-            <div class="court-list-container">
-                <h2>Damas</h2>
-                <ul>
-                    <li>Rachelle Maldonado</li>
-                    <li>Dania Janice </li>
-                    <li>Rosemary Becerra</li>
-                    <li>Kathrine </li>
-                    <!-- Add more Damas as needed -->
-                </ul>
+            <div class="video-container">
+                <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
+                    <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/zapubw?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+                </div>
             </div>
             <div class="court-list-container">
-                <h2>Chambelanes</h2>
+                <h2>Padrinos</h2>
                 <ul>
-                    <li>Raymond Maldonado</li>
-                    <li>Julian Camacho</li>
-                    <li>Manuel Becerra</li>
-                    <li>Yulian </li>
-                    <!-- Add more Chambelanes as needed -->
+                    <li>Cake - Maria Estrada</li>
+                    <li>Necklace - Badita Salazar 2</li>
+                    <li>Ring - Gisela Pena</li>
+                    <li>Anklet - Yvette</li>
+                    <li>Crown/Tiara - Tiffany Camacho</li>
+                    <li>Medallion - Mary Chuy Camacho</li>
+                    <li>Bible/Rosary/Doll - Laurie</li>
+                    <li>Bracelet - Marisol</li>
+                    <li>Surprise Gift - Matt Young</li>
+                    <li>Dress - Woody & Mayda</li>
+                    <li>Earrings - Lisa Davila</li>
                 </ul>
             </div>
             <div class="attire-container">
@@ -206,3 +177,4 @@
     </div>
 </body>
 </html>
+
